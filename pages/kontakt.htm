@@ -1,0 +1,14 @@
+title = "kontakt"
+url = "/kontakt"
+layout = "static-layout"
+is_hidden = 0
+==
+<div class="section chapter">
+  <div class="container" id="kontakt">
+    {% if activeLocale == 'se' %}
+      {% content "kontakt.htm" %}
+    {% elseif activeLocale == 'en' %}
+      {% content "kontakt-en.htm" %}
+    {% endif %}
+  </div>
+</div>

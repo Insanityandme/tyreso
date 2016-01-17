@@ -1,0 +1,32 @@
+title = "aktuellt"
+url = "/aktuellt"
+layout = "static-layout"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog-post"
+postPage = "blog-post"
+==
+<div class="section chapter">
+  <div class="container">
+    <div class="row">
+      <div class="col l7 m7 s12">
+        <h2>{{ 'Nyheter' |_ }}</h2>
+        <p>{{ 'En liten yta för oss som jobbar på kvinnojouren att dela våra tankar.' |_ }}</p>
+        {% component 'blogPosts' %}
+        
+      </div>
+      <div class="col l5 m5 s12">
+        {% if activeLocale == 'se' %}
+          {% content 'sponsorer.htm' %}
+        {% elseif activeLocale == 'en' %}
+          {% content 'sponsorer-eng.htm' %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,280 @@
+/*********************
+  Default Elements
+**********************/
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+  }
+
+li {
+    list-style: none; 
+}
+
+hr {
+    color: #ffffff;
+}
+
+p {
+    font-size: 18px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+.card-link {
+  color: #ffab40;
+  transition: color .3s ease;
+}
+
+/*********************
+  Aktuellt Classes
+**********************/
+#aktuellt .card .card-content a {
+    color: #FFAB40;
+    -webkit-transition: color .3s ease;
+    -moz-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    -ms-transition: color .3s ease;
+    transition: color .3s ease; }
+    #aktuellt .card .card-content a:hover {
+        color: #FFD8A6; }
+    #aktuellt .card .card-content .card-title {
+        line-height: 30px; }
+    #aktuellt .card .card-content p {
+        padding-bottom: 10px;
+    }
+
+/*********************
+  Contact Classes
+**********************/
+@media only screen and (max-width: 993px) {
+    #kontakt .btn {
+        margin-bottom: 60px;
+    }
+}
+
+#kontakt .chapter-toc li{
+    font-size: 12px;
+    color: #009688;
+    line-height: 30px;
+}
+
+#kontakt .btn {
+    text-transform: none;
+}
+
+/*********************
+  History Classes
+**********************/
+.history img {
+  padding: 15px 5px 0;   
+}
+
+.history .row .col {
+  margin: 20px 0;
+}
+
+.history {
+    margin-bottom: 30px;
+}
+
+/*********************************
+  Contact Holder Classes (footer)
+**********************************/
+.contact-holder h6 {
+  -webkit-font-smoothing: antialiased !important; 
+  -moz-osx-font-smoothing: grayscale;
+  color: #eeeeee !important;
+}
+
+.contact-holder .divider {
+  margin-bottom: 15px; 
+}
+
+/*********************
+  Content classes
+**********************/
+.p-small {
+    font-size: 15px;
+}
+
+.card-panel {
+    padding: 17px;
+}
+
+.article-content {
+    width: 80%;   
+}
+
+@media only screen and (max-width: 993px) {
+    .article-content {
+        width: 100%;  
+    }
+}
+
+.article-title {
+  margin-bottom: 30px; 
+}
+
+#hjalp-stod .article-title {
+  padding-top: 48px; 
+}
+
+#hjalp-stod .chapter-intro {
+    padding-bottom: 2rem;   
+}
+
+.chapter {
+  font-family: "RobotoDraft", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 80px;
+}
+
+.chapter-intro {
+  font-size: 20px;
+  line-height: 32px;
+  padding-bottom: 1rem; 
+}
+
+.chapter-toc {
+  border-left: 5px solid #B2DFDB;
+  padding-left: 20px;
+  margin-bottom: 50px;
+}
+
+.chapter-toc ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.chapter-toc li {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.chapter-toc li:last-child {
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+.chapter-toc h1 {
+  font-size: 15px;
+  line-height: 16px;
+  padding-bottom: 12px;
+  font-weight: 400;
+  color: #757575;
+  margin: 0;
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.section {
+  padding-top: 3rem;
+}
+
+.seperate {
+    padding-top: 68px 
+}
+
+.call-to-action {
+    width: 100%;
+}
+
+.bigp {
+    font-size: 18px;   
+}
+
+/*********************
+  Mobile logo
+**********************/
+ul.side-nav li.logo {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+}
+ul.side-nav #logo-container {
+  margin-bottom: 32px;
+  height: 57px;
+}
+ul.side-nav li.logo:hover {
+  background-color: transparent;
+}
+#front-page-logo {
+  display: inline-block;
+  pointer-events: none;
+  height: 100%;
+}
+
+/*********************
+  Fixing height and sidebar weight
+**********************/
+.bold > a {
+  font-weight: bold; 
+}
+ul.side-nav li {
+  line-height: 44;
+}
+
+/*********************
+  Color Classes
+**********************/
+.red-2, footer.page-footer {
+  background-color: #C62426; 
+}
+
+.red-svg {
+  stroke: #C62426; 
+}
+
+.material-icons.red700 { color: #B92526; }
+
+.article-title, .chapter-title, .chapter a, h1, h2, h3, h4, h5{
+  color: #009688; 
+}
+
+/*****************************************************************************
+  Repositioning elements in the nav and make them look good on smaller screens
+******************************************************************************/
+.left-logo {
+  left: -50px;
+}
+
+nav .brand-logo {
+  padding: 11px 0; 
+}
+
+@media only screen and (max-width : 601px) {
+  nav .brand-logo {
+      padding: 5.5px 0;    
+  }
+}
+
+@media only screen and (max-width: 993px) {
+  nav .btn {
+    left: 30px;   
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  nav .btn {
+    left: 15px;
+  }
+}
+
+.card-panel span {
+  -webkit-font-smoothing: antialiased !important; 
+  -moz-osx-font-smoothing: grayscale;
+}

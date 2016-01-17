@@ -1,0 +1,44 @@
+title = "Hjälp & Stöd"
+url = "/hjalp-stod"
+layout = "static-layout"
+is_hidden = 0
+==
+{% if activeLocale == 'se' %}
+  <div class="section chapter">
+    <div class="container">
+      <div class="row">
+        <div class="col l9 m12 s12">
+          {% content "hjalp-stod-1.htm" %}
+          {% partial "innehall.htm" %}
+          {% content "hjalp-stod-2.htm" %}
+          {% partial "praktiska-rad.htm" %}
+          {% content "hjalp-stod-3.htm" %}
+        </div>
+        <div class="col l3 m6 s12">
+          <div class="card-panel teal hoverable">
+            <span class="white-text">Stöd föreningens arbete genom att lämna ett bidrag till postgironummer: <strong>57 60 27 - 7</strong></span>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+{% elseif activeLocale == 'en' %}
+  <div class="section chapter">
+    <div class="container">
+      <div class="row">
+        <div class="col l9 m12 s12">
+          {% content "hjalp-stod-en-1.htm" %}
+          {% partial "innehall-eng.htm" %}
+          {% content "hjalp-stod-en-2.htm" %}
+          {% partial "praktiska-rad-eng.htm" %}
+          {% content "hjalp-stod-en-3.htm" %}
+        </div>
+        <div class="col l3 m6 s12">
+          <div class="card-panel teal hoverable">
+            <span class="white-text">Support the association's work by leaving a contribution to postgironr: <strong>57 60 27 - 7</strong></span>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+{% endif %}

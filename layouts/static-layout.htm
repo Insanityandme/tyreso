@@ -1,0 +1,45 @@
+[localePicker]
+==
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Tyresö Kvinno- &amp; Tjejjour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+  <!--  Android 5 Chrome Color-->
+  <meta name="theme-color" content="#B92526">
+        
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="{{ [ 'assets/css/theme.css' ]|theme }}">
+</head>
+
+<body>
+  <header>
+    {% partial "nav" %}
+  </header>
+
+  <main>
+    {% page %}
+  </main>
+    
+  <footer class="page-footer red-2">
+    {% partial "footer" %}
+  </footer>
+  
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src=" {{ [
+    'assets/js/app.js'
+  ]|theme }}">
+  </script>
+
+  <!-- Used to include the whole framework and components -->
+ 
+  {% scripts %}
+  {% styles %}
+
+</body>
+</html>

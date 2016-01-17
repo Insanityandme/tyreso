@@ -1,0 +1,59 @@
+[viewBag]
+
+[localePicker]
+==
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="se">Swedish</a></li>
+  <li><a href="en">English</a></li>
+</ul>
+
+<ul id="dropdown2" class="dropdown-content">
+  <li><a href="se">Swedish</a></li>
+  <li><a href="en">English</a></li>
+</ul>
+
+<div class="navbar-fixed">
+  <nav class="red-2 top-nav">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a id="logo-container" href="/" class="brand-logo left-logo"><img src="http://localhost:8888/storage/app/media/logo.png" alt="Logo"/></a>
+        <ul class="left hide-on-med-and-down">
+          <li><a href="/">{{ 'Hem'|_ }}</a></li>
+          <li><a href="/hjalp-stod">{{ 'Hjälp &amp; Stöd'|_ }}</a></li>
+          <li><a href="/aktuellt">{{ 'Aktuellt'|_ }}</a></li>
+          <li><a href="/om-oss">{{ 'Om oss'|_ }}</a></li>
+          <li><a href="/kontakt">{{ 'Kontakt'|_ }}</a></li>
+        </ul>
+        
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+        <ul class="right hide-on-small-only">
+          <li><a class="waves-effect waves-light btn z-depth-2" href="http://www.google.se">{{ 'Lämna Sidan!' |_ }}</a></li>
+        </ul>
+           
+        <ul class="right hide-on-med-and-down">
+          <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">Language<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>   
+      </div>
+    </div>
+  </nav>
+</div>
+
+<ul id="nav-mobile" class="side-nav">
+  <li class="logo">
+    <a id="logo-container" href="/" class="brand-logo">
+      <object id="front-page-logo" type="image/svg+xml" data="http://localhost:8888/storage/app/media/logo-red.svg"></object>
+    </a>
+  </li>
+  <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown2">Language<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li class="divider"></li>
+  <li class="bold"><a href="/">{{ 'Hem' |_ }}</a></li>
+  <li class="bold"><a href="/hjalp-stod">{{ 'Hjälp &amp; Stöd' |_ }}</a></li>
+  <li class="bold"><a href="/aktuellt">{{ 'Aktuellt' |_ }}</a></li>
+  <li class="bold"><a href="/om-oss">{{ 'Om oss' |_ }}</a></li>
+  <li class="bold"><a href="/kontakt">{{ 'Kontakt' |_ }}</a></li>
+</ul>
+
+<div class="fixed-action-btn hide-on-med-and-up" style="bottom: 25px; right: 16px;">
+    <a class="waves-effect waves-light btn red z-depth-2" href="http://www.google.se">{{ 'Lämna Sidan!' |_ }}</a>
+</div>

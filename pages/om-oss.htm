@@ -1,0 +1,48 @@
+title = "Om oss"
+url = "/om-oss"
+layout = "static-layout"
+is_hidden = 0
+==
+<div class="section chapter">
+  <div class="container">
+    <div class="row">
+      <div class="col l8 m12 s12">
+        {% if activeLocale == 'se' %}
+            {% content "om-oss.htm" %}
+        {% elseif activeLocale == 'en' %}
+            {% content "om-oss-eng.htm" %}
+        {% endif %}
+      </div>
+      
+      {% if activeLocale == 'se' %}
+        <div class="col l3 m6 s12 offset-l1">
+         <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Länkar</span>
+              <p class="p-small">Riksorganisationen för Kvinno och Tjejourer i Sverige och nätverket för kvinnors rätt mot mäns våld.</p>
+            </div>
+            <div class="card-action">
+              <a href="http://www.roks.se/" target="_blank">ROKS</a>
+              <a href="http://www.terrafem.org/" target="_blank">Terrafem</a>
+            </div>
+          </div>
+        </div>
+        
+      {% elseif activeLocale == 'en' %}
+        <div class="col l3 m6 s12 offset-l1">
+         <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Links</span>
+              <p class="p-small">National Organisation for Call centers in Sweden and the network for women's rights against men's violence</p>
+            </div>
+            <div class="card-action">
+              <a href="http://www.roks.se/" target="_blank">ROKS</a>
+              <a href="http://www.terrafem.org/" target="_blank">Terrafem</a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      
+    </div>
+  </div>
+</div>
